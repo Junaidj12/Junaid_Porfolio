@@ -1,488 +1,254 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body{
-    font-family: ;
-    background-color:#2D3250;
-    color: white;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Junaid's Portfolio</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 
-}
+  <body>
+    <nav>
+      <div class="logo">Junaid's Portfolio</div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="#first-section">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#My-Skills">Skills</a></li>
+          <li><a href="#pros">Projects</a></li>
+          <li><a href="#Contact-conatiner">Contact</a></li>
+      </ul>
+    </nav>
 
- 
-nav{
-  display: flex;
-  height: 70px;
-  width: 100%;
-  background: #1b1b1b;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 50px 0 100px;
-  flex-wrap: wrap;
-  position: fixed;
-    top: 0;
-    z-index: 1;
-}
-nav .logo{
-  color: #fff;
-  font-size: 25px;
-  font-weight: 600;
-  height: 80px;
-    width: 220px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    height: 80px;
-    align-items: center;
-}
-nav ul li{
-  margin: 0 5px;
-}
-nav ul li a{
-  color: #f2f2f2;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-}
-nav ul li a.active,
-nav ul li a:hover{
-  color: #111;
-  background: #fff;
-}
-nav .menu-btn i{
-  color: #fff;
-  font-size: 22px;
-  cursor: pointer;
-  display: none;
-}
-input[type="checkbox"]{
-  display: none;
-}
-@media (max-width: 1200px){
-  nav{
-    padding: 0 40px 0 50px;
-  }
-}
-@media (max-width: 1000px) {
-  nav .menu-btn i{
-    display: block;
-  }
-  #click:checked ~ .menu-btn i:before{
-    content: "\f00d";
-  }
-  nav ul{
-    position: fixed;
-    top: 80px;
-    left: -100%;
-    background: #111;
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: block;
-    transition: all 0.3s ease;
-  }
-  #click:checked ~ ul{
-    left: 0;
-  }
-  nav ul li{
-    width: 100%;
-    margin: 40px 0;
-  }
-  nav ul li a{
-    width: 100%;
-    margin-left: -100%;
-    display: block;
-    font-size: 20px;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  #click:checked ~ ul li a{
-    margin-left: 0px;
-  }
-  nav ul li a.active,
-  nav ul li a:hover{
-    background: none;
-    color: cyan;
-  }
-}
-.content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: -1;
-  width: 100%;
-  padding: 0 30px;
-  color: #1b1b1b;
-}
-.content div{
-  font-size: 40px;
-  font-weight: 700;
-}
+    <main>
+      <section id="first-section">
+        <div class="left">
+          <p>Hi, My Name is <span class="span">Muhammad Junaid</span></p>
+          <p>and I am a passionate</p>
+          <span id="element"></span>
+          <div class="cv">
+            <a
+                href="https://drive.google.com/file/d/1NLX-21P702xXAzuBUc2BxJf-Vq4Cb1st/view?usp=sharing"
+                target="blank"
+                ><input type="button" value="Download CV"
+              /></a>
+          </div>
+        </div>
 
+        <div class="right"></div>
+      </section>
+      <section id="My-Skills">
+      <div class="skill-section">
+        <h2>My Skills</h2>
+        <hr />
+  
+        <div class="skill-logo">
+          <div class="seven">
+            <div class="fusion logo"></div>
+            <div class="text">
+              <p><span class="bold">Autodesk Fusion 360</span> is a versatile
+                computer-aided design (CAD) and computer-aided engineering (CAE)
+                software developed by Autodesk. It seamlessly integrates 3D
+                modeling, simulation, and collaborative tools, providing a
+                comprehensive platform for product design and development. With
+                its cloud-based approach, Fusion 360 allows teams to work
+                collaboratively on projects, fostering innovation and efficiency
+                in the design process.</p>
+            </div>
+          </div>
+          <div class="seven">
+            <div class="html logo"></div>
+              <div class="text">
+                <p>
+                  <span class="bold">HTML</span>, or HyperText Markup Language, is
+                  the fundamental language used to create and structure content on
+                  the World Wide Web. It utilizes a system of tags to define
+                  elements such as headings, paragraphs, images, and links,
+                  enabling the presentation of information in a web browser. As
+                  the backbone of web development, HTML serves as the building
+                  block for constructing web pages.
+                </p>
+              </div>
+            </div>
+          
+          <div class="seven">
+            <div class="css logo"></div>
+              <div class="text">
+                <p>
+                  <span class="bold">CSS</span>, or Cascading Style Sheets, is a
+                  fundamental web technology used to design and format the visual
+                  presentation of HTML documents. It enables developers to control
+                  the layout, colors, fonts, and overall appearance of a website,
+                  ensuring a consistent and aesthetically pleasing user
+                  experience. By separating style from content, CSS enhances the
+                  flexibility and maintainability of web design.
+                </p>
+              </div>
+            
+          </div>
+          <div class="seven">
+            <div class="js logo"></div>
+              <div class="text">
+                <p>
+                  <span class="bold">JavaScript</span> is a versatile and
+                  widely-used programming language that enables interactive and
+                  dynamic content on websites. It is primarily executed in web
+                  browsers, allowing developers to enhance user experience by
+                  manipulating the Document Object Model (DOM) and creating
+                  responsive, client-side functionalities. With its easy
+                  integration into HTML and CSS, JavaScript plays a crucial role
+                  in building modern, interactive web applications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <section id="pros">
+        <div class="projects">
+          <h2>Projects</h2>
+          <hr />
+        </div>
+        <div class="allpro">
+          <div class="pro1 pro">
+            <p>Design and Modelling of Taper Sunk Key.</p>
+            <div class="report">
+              <a
+                href="https://drive.google.com/file/d/1Va2SWyZXUxdyAfLfqwNw3aHODy8dcCs9/view?usp=sharing"
+                target="blank"
+                ><input type="button" value="See More.."
+              /></a>
+            </div>
+          </div>
+          <div class="pro2 pro">
+            <p>Designing, Modeling and Analysing of Bevel Gear.</p>
+            <div class="report">
+              <a href="https://drive.google.com/file/d/1MJQEkTKggPa-cfJt0Oy8HYTvRTWKC_o5/view?usp=sharing"
+                target="blank"
+                ><input type="button" value="See More.."
+              /></a>
+            </div>
+          </div>
+          <div class="pro3 pro">
+            <p>Effect of Surface Radiation on Critical Radius of Insulation.</p>
+            <div class="report">
+              <a
+                href="https://drive.google.com/file/d/1eeykGlMaFjxRQHxrGglj2dpQJtdQhjW4/view?usp=sharing"
+                target="blank"
+                ><input type="button" value="See More.."
+              /></a>
+            </div>
+          </div>
+          <div class="pro4 pro">
+            <p>Whaste Heat Recovery Using Thermo Electric Generator</p>
+            <div class="report">
+              <a
+                href="https://drive.google.com/file/d/15oLhkTyXXI6yDd2qEj9Q5kfpNSf_Dq8S/view?usp=sharing"
+                target="blank"
+                ><input type="button" value="See More.."
+              /></a>
+            </div>
+          </div>
+          <div class="pro5 pro">
+            <p>
+              Creating a replica of the Amazon homepage utilizing HTML and CSS.
+            </p>
+            <div class="report">
+              <a
+                href="https://drive.google.com/file/d/1Va2SWyZXUxdyAfLfqwNw3aHODy8dcCs9/view?usp=sharing"
+                target="blank"
+                ><input type="button" value="See More.."
+              /></a>
+            </div>
+          </div>
+          <div class="pro6 pro">
+            <p>My student portfolio utilizing HTML, CSS, and JavaScript.</p>
+            <div class="report">
+              <a
+                href="https://drive.google.com/file/d/1Va2SWyZXUxdyAfLfqwNw3aHODy8dcCs9/view?usp=sharing"
+                target="blank"
+                ><input type="button" value="See More.."
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="Contact-conatiner">
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="contact-left"
+        >
+          <div class="contact-left-title">
+            <h2>Get in contact.</h2>
+            <hr />
+          </div>
+          <input
+            type="hidden"
+            name="access_key"
+            value="01608f00-d837-4b54-ad54-5ff3171565d5"
+          />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            class="Contact-inputs"
+            required
+          />
+          <input
+            type="text"
+            name="email"
+            placeholder="Your Mail Id"
+            class="Contact-inputs"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            class="Contact-inputs"
+          ></textarea>
+          <button type="submit" class="Contact-input">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </section>
 
+      <footer>
+        <div class="footer">
+          <div class="photo">
+            <p>Muhammad Juanid Jamadar</p>
+          </div>
+          <div class="social">
+            <a href="https://linkedin.com/in/junaid2002" target="blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/muhammadjunaidjamadar/"
+              target="blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://twitter.com/arjumu2002" target="blank"
+              ><i class="fa-brands fa-square-x-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </main>
 
-
-
-
-
-#first-section{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 120px;
-}
-@media (max-width: 900px){
-    #first-section{
-        flex-direction: column;
-    }
-  }
-.left{
-    height: 201px;
-    width: 400px;
-    font-size: xx-large;
-   text-align: center;
-   margin-left: 12px;
-}
-@media(max-width:900px){
-    .left p {
-        font-size: 28px;
-    }
-}
-@media(max-width:900px){
-    #element .span{
-        font-size: 22px;
-        
-    }
-}
-.left input{
-    height: 40px;
-    width: 115px;
-    border-radius: 25px;
-    margin-top: 25px;
-}
-.left input:hover{
-    filter: drop-shadow(10px 10px 3px black);
-    transform: scale(1.2);
-    transform: skewy(2deg);
-}
-
-.right{
-    height: 280px;
-    width: 280px;
-    background-image: url('dev.png');
-    background-size: cover;
-    filter: drop-shadow(5px 5px 10px);
-    transition-timing-function: ease-in-out;
-    transition-duration: 50ms;
-    margin-top: 70px;
-}
-.right:hover{
-    transform: scale(1.1)
-}
-.span{
-    color: rgb(167, 167, 42);
-    font-size: xx-large;
-}
-#element{
-    color: rgb(167, 167, 42);
-}
-.skill-section{
-    display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   margin-top: 360px;
-}
-.skill-section h2{
-    font-weight: 800;
-    font-size: 48px;
-}
-.seven{
-    display: flex;
-    height: 150px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 25px;
-}
-.skill-section hr{
-    border: none;
-    width: 140px;
-    height: 5px;
-    background-color: rgb(40, 93, 154);
-    margin-top: 2px;
-    margin-right: 77px;
-    margin-bottom: 55px;
-}
-.logo{
-    height: 120px;
-    width: 100px;
-    background-size: cover;
-}
-.text{
-    height: 150px;
-    width: 800px; 
-    font-size: large;
-    margin-left: 160px;
-}
-.fusion {
-    background-image: url('autodesk-fusion-360-logo-.png');
-    background-size: cover;
-
-}
-.html{
-    background-image: url('HTML5_logo.svg.png');
-    background-size: cover;
-}
-.css{
-    background-image: url('CSS\ logo.png');
-    background-size: cover;
-}
-.js{background-image: url('js_logo.png');
-    background-size: cover;
-}  
-.bold{
-    font-weight: bold;
-    font-size: large;
-    color: rgb(209, 209, 111);
-}
-@media(max-width: 900px){
-    .logo{
-        background-size: 60px;
-        background-repeat: no-repeat;
-        font-size: small !important;
-    }
-    .text{
-        width: 240px;
-        font-size: small;
-        margin-left: 0px;
-    }
-    .seven{
-        height: 430px;
-        flex-direction: column;
-    }
-}
-.projects{
-    margin-top: 220px;
-    margin-left: 220px;
-    font-weight: 800;
-    font-size: xx-large;
-    margin-bottom: 50px;
-    margin-right: 20px;
-}
-.projects hr{
-    border: none;
-    width: 120px;
-    height: 5px;
-    background-color: rgb(40, 93, 154);
-    margin-top: 3px;
-}
-.allpro{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-left: 100px;
-    margin-right: 100px;
-    aspect-ratio: 16/9;
-}
-.allpro p{
-    font-size: larger;
-    color: black;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 40px;
-}
-.pro{
-    height: 215px;
-    width: 300px;
-    margin: 20px;
-    background-color: aqua;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition-duration: 25ms;
-    transition-timing-function: ease-in-out;
-}
-.pro:hover{
-    box-shadow: 10px 20px 3px black;
-    transform: scale(1.2);
-    transform: skewy(2deg);
-}
-.pro img{
-    height: 60px;
-    width: 60px;
-   
-}
-.report{
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-.report input{
-    height: 40px;
-    width: 115px;
-    border-radius: 25px;
-}
-.report input:hover{
-    filter: drop-shadow(10px 10px 3px black);
-    transform: scale(1.2);
-    transform: skewy(2deg);
-}
-.pro a{
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-}
-@media(max-width:900px){
-    .projects{
-       margin-left: 110px; 
-    }
-    .allpro{
-        width: 225px;
-        margin-left: 75px;
-    }
-    .pro{
-        height: 300px;
-    }
-}
-
-#Contact-conatiner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.contact-left{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 15px;
-    margin-top: 100px;
-}
-.contact-left-title{
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    margin-left: 220px;
-}
-.contact-left-title hr{
-    border: none;
-    width: 120px;
-    height: 5px;
-    background-color: rgb(40, 93, 154);
-    margin-top: 2px;
-    
-}
-.Contact-inputs{
-    height: 50px;
-    width: 400px;
-    border: none;
-    outline: none;
-    margin: 12px;
-    padding: 25px;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    border-radius: 50px;
-    margin-left: 180px;
-}
-.contact-left textarea{
-    height: 140px;
-    padding-top: 15px;
-    border-radius: 20px;
-}
-.Contact-inputs:focus{
-    border: 3px solid #ff0000;
-}
-.contact-input{
-    width: 50px;
-    height: 50px;
-    border: none;
-    outline: none;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    border-radius: 50px;
-}
-#Contact-conatiner button{
-    margin-left: 180px;
-    margin-top: -10px;
-    height: 50px;
-    width: 100px;
-    border: none;
-    border-radius: 50px;
-}
-#Contact-conatiner button:focus{
-    border: 3px solid #ff0000;
-}
-
-@media(max-width:900px){
-    #Contact-conatiner{
-        margin-left: -175px;
-    }
-    .Contact-inputs{
-        width: 320px;
-    }
-}
-
-.footer{
-    height: 100px;
-    width: 100%;
-    background-color: black;
-    margin-top: 100px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.photo{
-    background-color: rgb(209, 255, 255);
-   height: 80px;
-   width: 80px;
-   border-radius: 50%;
-   margin-left: 115px;
-   background-image: url('photo.jpg');
-   background-size: cover;
-}
-.photo p{
-    margin-left: 100px;
-    width: 200px;
-    margin-top: 32px;
-
-}
-.social{
-    
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 100px;
-}
-.social i{
-   font-size: 30px;
-   margin: 12px;
-}
-@media(max-width:900px){
-    .photo{
-        display: none;
-    }
-   .social{
-    margin-left: -113px;
-   } 
-}
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["<i>Mechanical</i> Engineer.", "Web Developer."],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
