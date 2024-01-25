@@ -1,0 +1,10 @@
+*{margin: 0;
+    padding: 0;
+}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+/* .w3-margin-top {
+    background-color: #85586F;   
+} */
+.w3-light-grey{
+    background-color: #3C0753 !important; 
+}
